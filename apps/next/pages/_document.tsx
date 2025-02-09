@@ -11,7 +11,7 @@ class Document extends NextDocument {
     const { getStyleElement } = AppRegistry.getApplication('Main')
     const styles = [getStyleElement()]
 
-    const initialProps = await NextDocument.getInitialProps(ctx)
+    const initialProps = await NextDocument?.getInitialProps(ctx)
     return { ...initialProps, styles: React.Children.toArray(styles) }
   }
 
