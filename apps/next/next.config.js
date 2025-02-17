@@ -2,6 +2,7 @@ const { withExpo } = require('@expo/next-adapter')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   // reanimated (and thus, Moti) doesn't work with strict mode currently...
   // https://github.com/nandorojo/moti/issues/224
   // https://github.com/necolas/react-native-web/pull/2330
@@ -17,6 +18,7 @@ const nextConfig = {
     'react-native-reanimated',
     'nativewind',
     'react-native-gesture-handler',
+    'react-native-maps',
   ],
 }
 
