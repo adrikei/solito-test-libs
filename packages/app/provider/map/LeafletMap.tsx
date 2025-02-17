@@ -9,8 +9,7 @@ export const LeafletMap: FC<MapProps>
   = ({ children, ...options }: MapProps): ReactElement => {
   return (
     <MapContainer
-      style={{ height: "100vh" }}
-      // className="h-[200px] w-full"
+      className="grow w-full relative"
       maxZoom={18}
       {...options}
     >

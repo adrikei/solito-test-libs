@@ -9,7 +9,7 @@ export function HomeScreen(): ReactElement {
 
   return (
     <View
-      // className="flex-1 items-center justify-center p-3"
+      className="flex-1 items-center justify-center p-3"
     >
       <Map center={center} zoom={13} >
         <>Test</>

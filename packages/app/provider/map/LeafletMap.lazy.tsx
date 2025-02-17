@@ -11,11 +11,6 @@ export const LazyMarker = dynamic(
   { ssr: false }
 )
 
-// export const LazyMarkerCluster = dynamic(
-//   async () => await import('./MarkerCluster'),
-//   {
-//     ssr: false,
-//   }
-// )
+// https://jan-mueller.at/blog/react-leaflet/#nextjs
 
 export default LazyMap
