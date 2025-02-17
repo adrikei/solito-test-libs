@@ -2,14 +2,15 @@ import { ReactElement, FC } from 'react'
 import type { MapOptions } from 'leaflet'
 import { MapContainer, TileLayer } from 'react-leaflet'
 import { MapProps } from 'app/provider/map/index'
+import 'leaflet/dist/leaflet.css'
 
 
 export const LeafletMap: FC<MapProps>
   = ({ children, ...options }: MapProps): ReactElement => {
   return (
     <MapContainer
-      // style={{ height: "100vh" }}
-      className="h-[200px] w-full relative"
+      style={{ height: "100vh" }}
+      // className="h-[200px] w-full"
       maxZoom={18}
       {...options}
     >
